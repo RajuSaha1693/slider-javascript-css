@@ -1,0 +1,51 @@
+.slider-img {
+  height: 50vh;
+  width: 100%;
+}
+.slide {
+  display: none;
+  position: relative;
+}
+.slide h2 {
+  position: absolute;
+  bottom: 8px;
+  right: 50px;
+  color: white;
+  background-color: rgba(0, 255, 0, 0.3);
+  padding: 0 5px 0 5px;
+  width: 50%;
+}
+.active {
+  display: block;
+}
+.animated {
+  animation: appear 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.left {
+  left: 6px;
+}
+.right {
+  right: 6px;
+}
+.button-text {
+  height: 50vh;
+  top: 8px;
+  position: absolute;
+  margin: 0 auto;
+  background-color: rgba(216, 218, 226, 0.3);
+  border: none;
+  font-weight: 500;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
